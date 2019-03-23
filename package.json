@@ -2,11 +2,13 @@
   "name": "runs.pk",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://prod1992.github.io/runs.pk/",
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack-dev-server --env dev --mode none --colors",
     "build:prod": "webpack --env prod --mode production",
-    "build:watch": "webpack-dev-server --env dev --mode none"
+    "build:watch": "webpack-dev-server --env dev --mode none",
+    "deploy": "gh-pages -d dist"
   },
   "author": "mwieth",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.11.0",
